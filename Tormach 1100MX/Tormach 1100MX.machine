@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>Tormach</vendor>
+
+  <model>1100mx</model>
+
+  <description>Tormach 1100mx</description>
+
+  <control>Tormach PathPilot</control>
+
+  <machining additive="no" inspection="no" jet="no" milling="yes" turning="no"/>
+
+  <dimensions depth="1435mm" height="2439mm" weight="726kg" width="1753mm"/>
+
+  <capacities depth="241mm" height="200mm" weight="0kg" width="863mm"/>
+
+  <png128></png128>
+
+  <mtk></mtk>
+
+  <controllerConfigurations></controllerConfigurations>
+
+  <fusion>
+    <model></model>
+  </fusion>
+
+  <custom>
+    <data></data>
+    <name></name>
+    <softwareVersion></softwareVersion>
+    <network ip="" port="" protocol=""/>
+    <serial></serial>
+  </custom>
+
+  <coolant options="FLOOD"/>
+
+  <multiAxis adjust="yes" angle="10deg" cone="3deg" feedRateType="inverse" linearizationTolerance="0.040000000000000001mm" method="off" reconfigure="yes" tolerance="0.040000000000000001mm"/>
+
+  <tooling maximumToolDiameter="0mm" maximumToolLength="0mm" maximumToolWeight="0kg" numberOfTools="12" toolChanger="yes" toolPreload="yes"/>
+
+  <machiningTime ratio="1" toolChangeTime="15s"/>
+
+  <capabilities maximumBlockProcessingSpeed="0" maximumFeedrate="7620mm/min" workOffsets="100"/>
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" wcs="0mm 0mm 0mm">
+    <machineAssembly></machineAssembly>
+  </simulation>
+
+  <post>
+    <postProcessor>system://tormach.cps</postProcessor>
+    <postProperties>
+      <Parameters/>
+    </postProperties>
+    <setupSheet></setupSheet>
+    <setupSheetProperties/>
+  </post>
+
+  <axis actuator="linear" coordinate="X" homePosition="0mm" id="X" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="0mm 457mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <axis actuator="linear" coordinate="Y" homePosition="0mm" id="Y" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="0mm 279mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <axis actuator="linear" coordinate="Z" homePosition="0mm" id="Z" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="0mm 413mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <spindle axis="0 0 1" maximumSpeed="10000rpm" minimumSpeed="70rpm">
+    <description></description>
+  </spindle>
+
+</machine>
