@@ -3,7 +3,7 @@
         {
             "BMC": "hss",
             "GRADE": "Mill Generic",
-            "description": "",
+            "description": "[Aluminum] Bull Nose",
             "geometry": {
                 "CSP": false,
                 "DC": 20,
@@ -11,37 +11,31 @@
                 "LB": 70,
                 "LCF": 35,
                 "NOF": 3,
-                "NT": 0,
                 "OAL": 115,
                 "RE": 1,
                 "SFDM": 20,
-                "TA": 0,
-                "TP": 0,
-                "shoulder-diameter": 0,
-                "shoulder-length": 45,
-                "tip-diameter": 0,
-                "tip-length": 0,
-                "tip-offset": 0
+                "shoulder-length": 45
             },
             "guid": "045ea7cb-e3f1-4da1-9add-f149a6fbb660",
             "holder": {
                 "description": "BT40 - B4C3-0032",
                 "guid": "{04ff9f1d-1a84-4413-9499-659c39877517}",
                 "product-id": "",
+                "product-link": "",
                 "segments": [
                     {
                         "height": 3.6576,
                         "lower-diameter": 32.385000000000005,
-                        "upper-diameter": 47.62500000000001
+                        "upper-diameter": 47.625000000000014
                     },
                     {
                         "height": 18.3134,
-                        "lower-diameter": 47.62500000000001,
-                        "upper-diameter": 47.62500000000001
+                        "lower-diameter": 47.625000000000014,
+                        "upper-diameter": 47.625000000000014
                     },
                     {
                         "height": 1.016,
-                        "lower-diameter": 47.62500000000001,
+                        "lower-diameter": 47.625000000000014,
                         "upper-diameter": 45.593
                     },
                     {
@@ -99,7 +93,6 @@
                 "unit": "millimeters",
                 "vendor": ""
             },
-            "last_modified": 1618528626079,
             "post-process": {
                 "break-control": false,
                 "comment": "",
@@ -111,7 +104,7 @@
                 "turret": 0
             },
             "product-id": "",
-            "reference_guid": "{03f65727-1fb3-4aa0-b7d5-9e3b7724c029}",
+            "product-link": "",
             "start-values": {
                 "presets": [
                     {
@@ -119,19 +112,18 @@
                         "f_n": 0.296875,
                         "f_z": 0.197916666666667,
                         "guid": "39c32ab2-4173-8d30-7ed7-a7989b2dbbb8",
-                        "n": 16000,
-                        "n_ramp": 16000,
+                        "n": 16000.000000000002,
+                        "n_ramp": 16000.000000000002,
                         "name": "Default Preset",
                         "tool-coolant": "flood",
                         "use-stepdown": false,
                         "use-stepover": false,
-                        "v_c": 1005.30964914873,
+                        "v_c": 1005.309649148734,
                         "v_f": 9500,
                         "v_f_leadIn": 4750,
                         "v_f_leadOut": 9500,
                         "v_f_plunge": 4750,
-                        "v_f_ramp": 4750,
-                        "v_f_retract": 4750
+                        "v_f_ramp": 4750
                     }
                 ]
             },
@@ -141,7 +133,7 @@
         },
         {
             "BMC": "carbide",
-            "description": "Sutton 2FL Carbide Ballnose",
+            "description": "[Aluminium] Sutton 2FL Carbide Ballnose",
             "geometry": {
                 "CSP": false,
                 "DC": 12,
@@ -342,7 +334,7 @@
         },
         {
             "BMC": "unspecified",
-            "description": "4FL 18mm Cheap Boi ",
+            "description": "[Aluminium] 4FL 18mm Cheap Boi ",
             "geometry": {
                 "CSP": false,
                 "DC": 18,
@@ -426,7 +418,6 @@
                 "unit": "millimeters",
                 "vendor": "Maritool"
             },
-            "last_modified": 1619146389893,
             "post-process": {
                 "break-control": false,
                 "comment": "",
@@ -439,7 +430,6 @@
             },
             "product-id": "Goodluck",
             "product-link": "Nil",
-            "reference_guid": "<NEW TOOL GUID>",
             "start-values": {
                 "presets": [
                     {
