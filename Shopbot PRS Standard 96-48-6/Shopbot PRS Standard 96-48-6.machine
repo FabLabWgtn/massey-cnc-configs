@@ -3,7 +3,7 @@
 
   <vendor>Shopbot</vendor>
 
-  <model>PRS Standard 96-48-6</model>
+  <model>PRS Standard 96-48</model>
 
   <description>Shopbot Large Format</description>
 
@@ -48,7 +48,7 @@
   </simulation>
 
   <post>
-    <postProcessor>system://shopbot iso.cps</postProcessor>
+    <postProcessor>system://shopbot.cps</postProcessor>
     <postProperties>
       <Parameters/>
     </postProperties>
