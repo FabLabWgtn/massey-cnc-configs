@@ -525,6 +525,136 @@
             "type": "holder",
             "unit": "millimeters",
             "vendor": "Maritool"
+        },
+        {
+            "BMC": "ti coated",
+            "description": "[Aluminium] 4FL Ball Nose",
+            "geometry": {
+                "CSP": false,
+                "DC": 6,
+                "HAND": true,
+                "LB": 41,
+                "LCF": 25,
+                "NOF": 4,
+                "OAL": 75,
+                "SFDM": 6,
+                "shoulder-length": 41
+            },
+            "guid": "a1389fdc-a7d9-4701-ab35-d5736419bb83",
+            "holder": {
+                "description": "BT30 Tool Holder, ER20, 60mm",
+                "guid": "392fe6aa-e6d5-40ec-9e99-059a0ea3aa9b",
+                "last_modified": 1594785151687,
+                "product-id": "PN: 39655",
+                "product-link": "https://tormach.com/bt30-tool-holder-er20-60mm.html",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 3.3,
+                        "lower-diameter": 25,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 18.4,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 32.400000000000006
+                    },
+                    {
+                        "height": 5.2,
+                        "lower-diameter": 24.700000000000006,
+                        "upper-diameter": 24.700000000000006
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 32.400000000000006,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 14,
+                        "lower-diameter": 34,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 44.23,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 4.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 46,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 3.2,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 7,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 44.23
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": "Tormach"
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 30,
+                "length-offset": 30,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 30,
+                "turret": 0
+            },
+            "product-id": "49533",
+            "product-link": "https://tradetools.co.nz/products/6mm-ser-1xlmb-4fl-ti-namite-a-b-n-carbide-49533-25x75-1",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.066666666666667,
+                        "f_z": 0.05,
+                        "guid": "c324edd9-e7bd-4bd2-8779-05f3eee95f12",
+                        "n": 5000,
+                        "n_ramp": 5000,
+                        "name": "Default preset",
+                        "tool-coolant": "flood",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 94.2477796076938,
+                        "v_f": 1000,
+                        "v_f_leadIn": 1000,
+                        "v_f_leadOut": 1000,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "ball end mill",
+            "unit": "millimeters",
+            "vendor": "SGS/Kyocera"
         }
     ],
     "version": 1
