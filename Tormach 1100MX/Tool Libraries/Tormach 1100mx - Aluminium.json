@@ -715,7 +715,7 @@
         },
         {
             "BMC": "carbide",
-            "description": "4FL Bull Nose",
+            "description": "[Aluminium] 4FL Bull Nose",
             "geometry": {
                 "CSP": false,
                 "DC": 12,
