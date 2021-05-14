@@ -655,6 +655,194 @@
             "type": "ball end mill",
             "unit": "millimeters",
             "vendor": "SGS/Kyocera"
+        },
+        {
+            "BMC": "ti coated",
+            "description": "[Aluminium] Bull Nose",
+            "geometry": {
+                "CSP": false,
+                "DC": 8,
+                "HAND": true,
+                "LB": 31,
+                "LCF": 19,
+                "NOF": 4,
+                "OAL": 63,
+                "RE": 1,
+                "SFDM": 8,
+                "shoulder-length": 31
+            },
+            "guid": "82fd1f5e-5573-41b3-b66f-08d12b52ef5b",
+            "holder": {
+                "description": "BT30 Tool Holder, ER20, 60mm",
+                "guid": "392fe6aa-e6d5-40ec-9e99-059a0ea3aa9b",
+                "last_modified": 1594785151687,
+                "product-id": "PN: 39655",
+                "product-link": "https://tormach.com/bt30-tool-holder-er20-60mm.html",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 3.3,
+                        "lower-diameter": 25,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 18.4,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 32.40000000000001
+                    },
+                    {
+                        "height": 5.2,
+                        "lower-diameter": 24.70000000000001,
+                        "upper-diameter": 24.70000000000001
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 32.40000000000001,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 14,
+                        "lower-diameter": 34,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 44.23,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 4.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 46,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 3.2,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 7,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 44.23
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": "Tormach"
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 22,
+                "length-offset": 22,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 22,
+                "turret": 0
+            },
+            "product-id": "46857",
+            "product-link": "https://tradetools.co.nz/products/8mm-z-carb-ap-1-0mm-cr-tx-4-flute-carbide-endmill-19x63-46857",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.066666666666667,
+                        "f_z": 0.05,
+                        "guid": "41f4cb1d-7492-4177-9267-dcbbb93cb849",
+                        "n": 5000,
+                        "n_ramp": 5000,
+                        "name": "Default preset",
+                        "tool-coolant": "flood",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 125.66370614359172,
+                        "v_f": 1000,
+                        "v_f_leadIn": 1000,
+                        "v_f_leadOut": 1000,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "bull nose end mill",
+            "unit": "millimeters",
+            "vendor": "SGS/Kyocera"
+        },
+        {
+            "BMC": "carbide",
+            "description": "[Aluminium] Face Mill",
+            "geometry": {
+                "CSP": false,
+                "DC": 63,
+                "HAND": true,
+                "LB": 62.50000000000001,
+                "LCF": 8,
+                "NOF": 6,
+                "OAL": 82,
+                "RE": 0.8,
+                "SFDM": 46,
+                "TA": 0,
+                "shoulder-length": 25
+            },
+            "guid": "0b7c2814-68cc-43ca-b206-850a5e788cc2",
+            "last_modified": 1620960053382,
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 100,
+                "length-offset": 100,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 100,
+                "turret": 0
+            },
+            "product-id": "R220.96-0063-08-6A",
+            "product-link": "https://www.secotools.com/article/p_02623194",
+            "reference_guid": "<NEW TOOL GUID>",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.048868689830426,
+                        "f_z": 0.15,
+                        "guid": "37734f19-9e25-4424-99de-d8bb9deff9ba",
+                        "n": 6821,
+                        "n_ramp": 6821,
+                        "name": "Default preset",
+                        "stepdown": 3,
+                        "tool-coolant": "flood",
+                        "use-stepdown": true,
+                        "use-stepover": false,
+                        "v_c": 1350.0146198785667,
+                        "v_f": 6138.9,
+                        "v_f_leadIn": 6138.9,
+                        "v_f_leadOut": 6138.9,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "face mill",
+            "unit": "millimeters",
+            "vendor": "SECO "
         }
     ],
     "version": 1
