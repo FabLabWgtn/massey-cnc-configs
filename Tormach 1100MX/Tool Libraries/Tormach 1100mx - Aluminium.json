@@ -1,139 +1,8 @@
 {
     "data": [
         {
-            "BMC": "hss",
-            "GRADE": "Mill Generic",
-            "description": "[Aluminum] Bull Nose",
-            "geometry": {
-                "CSP": false,
-                "DC": 20,
-                "HAND": true,
-                "LB": 70,
-                "LCF": 35,
-                "NOF": 3,
-                "OAL": 115,
-                "RE": 1,
-                "SFDM": 20,
-                "shoulder-length": 45
-            },
-            "guid": "045ea7cb-e3f1-4da1-9add-f149a6fbb660",
-            "holder": {
-                "description": "BT40 - B4C3-0032",
-                "guid": "{04ff9f1d-1a84-4413-9499-659c39877517}",
-                "product-id": "",
-                "product-link": "",
-                "segments": [
-                    {
-                        "height": 3.6576,
-                        "lower-diameter": 32.385000000000005,
-                        "upper-diameter": 47.625000000000014
-                    },
-                    {
-                        "height": 18.3134,
-                        "lower-diameter": 47.625000000000014,
-                        "upper-diameter": 47.625000000000014
-                    },
-                    {
-                        "height": 1.016,
-                        "lower-diameter": 47.625000000000014,
-                        "upper-diameter": 45.593
-                    },
-                    {
-                        "height": 9.0932,
-                        "lower-diameter": 39.878,
-                        "upper-diameter": 39.878
-                    },
-                    {
-                        "height": 1.524,
-                        "lower-diameter": 39.878,
-                        "upper-diameter": 42.926
-                    },
-                    {
-                        "height": 1,
-                        "lower-diameter": 61,
-                        "upper-diameter": 63
-                    },
-                    {
-                        "height": 4.4,
-                        "lower-diameter": 63,
-                        "upper-diameter": 63
-                    },
-                    {
-                        "height": 2.887,
-                        "lower-diameter": 63,
-                        "upper-diameter": 53
-                    },
-                    {
-                        "height": 4.226,
-                        "lower-diameter": 53,
-                        "upper-diameter": 53
-                    },
-                    {
-                        "height": 2.887,
-                        "lower-diameter": 53,
-                        "upper-diameter": 63
-                    },
-                    {
-                        "height": 8.600000000000001,
-                        "lower-diameter": 63,
-                        "upper-diameter": 63
-                    },
-                    {
-                        "height": 1,
-                        "lower-diameter": 63,
-                        "upper-diameter": 61
-                    },
-                    {
-                        "height": 2,
-                        "lower-diameter": 44.45,
-                        "upper-diameter": 44.45
-                    }
-                ],
-                "type": "holder",
-                "unit": "millimeters",
-                "vendor": ""
-            },
-            "post-process": {
-                "break-control": false,
-                "comment": "",
-                "diameter-offset": 10,
-                "length-offset": 10,
-                "live": true,
-                "manual-tool-change": false,
-                "number": 10,
-                "turret": 0
-            },
-            "product-id": "",
-            "product-link": "",
-            "start-values": {
-                "presets": [
-                    {
-                        "description": "",
-                        "f_n": 0.296875,
-                        "f_z": 0.197916666666667,
-                        "guid": "39c32ab2-4173-8d30-7ed7-a7989b2dbbb8",
-                        "n": 16000.000000000002,
-                        "n_ramp": 16000.000000000002,
-                        "name": "Default Preset",
-                        "tool-coolant": "flood",
-                        "use-stepdown": false,
-                        "use-stepover": false,
-                        "v_c": 1005.309649148734,
-                        "v_f": 9500,
-                        "v_f_leadIn": 4750,
-                        "v_f_leadOut": 9500,
-                        "v_f_plunge": 4750,
-                        "v_f_ramp": 4750
-                    }
-                ]
-            },
-            "type": "bull nose end mill",
-            "unit": "millimeters",
-            "vendor": ""
-        },
-        {
             "BMC": "carbide",
-            "description": "[Aluminium] Sutton 2FL Carbide Ballnose",
+            "description": "[Aluminium] 2F Ballnose",
             "geometry": {
                 "CSP": false,
                 "DC": 12,
@@ -334,7 +203,7 @@
         },
         {
             "BMC": "unspecified",
-            "description": "[Aluminium] 4FL 18mm Cheap Boi ",
+            "description": "[Aluminium] 4FL Endmill",
             "geometry": {
                 "CSP": false,
                 "DC": 18,
@@ -658,7 +527,7 @@
         },
         {
             "BMC": "ti coated",
-            "description": "[Aluminium] Bull Nose",
+            "description": "[Aluminium] 4FL Bull Nose",
             "geometry": {
                 "CSP": false,
                 "DC": 8,
@@ -843,6 +712,137 @@
             "type": "face mill",
             "unit": "millimeters",
             "vendor": "SECO "
+        },
+        {
+            "BMC": "carbide",
+            "description": "4FL Bull Nose",
+            "geometry": {
+                "CSP": false,
+                "DC": 12,
+                "HAND": true,
+                "LB": 32.90000000000001,
+                "LCF": 26,
+                "NOF": 4,
+                "OAL": 83,
+                "RE": 0.75,
+                "SFDM": 12,
+                "shoulder-length": 32.90000000000001
+            },
+            "guid": "8c5bf386-17c1-481c-8ab2-dcacf54b414e",
+            "holder": {
+                "description": "BT30 Tool Holder, ER20, 60mm",
+                "guid": "392fe6aa-e6d5-40ec-9e99-059a0ea3aa9b",
+                "last_modified": 1594785151687,
+                "product-id": "PN: 39655",
+                "product-link": "https://tormach.com/bt30-tool-holder-er20-60mm.html",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 3.3,
+                        "lower-diameter": 25,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 18.4,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 33.70000000000001
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 33.70000000000001,
+                        "upper-diameter": 32.40000000000001
+                    },
+                    {
+                        "height": 5.2,
+                        "lower-diameter": 24.70000000000001,
+                        "upper-diameter": 24.70000000000001
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 32.40000000000001,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 14,
+                        "lower-diameter": 34,
+                        "upper-diameter": 34
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 44.23,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 4.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 46,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 3.2,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 37.7
+                    },
+                    {
+                        "height": 2.35,
+                        "lower-diameter": 37.7,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 7,
+                        "lower-diameter": 46,
+                        "upper-diameter": 46
+                    },
+                    {
+                        "height": 0.5,
+                        "lower-diameter": 46,
+                        "upper-diameter": 44.23
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": "Tormach"
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 20,
+                "length-offset": 20,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 20,
+                "turret": 0
+            },
+            "product-id": "46861",
+            "product-link": "https://tradetools.co.nz/products/12mm-z-carb-ap-75mm-cr-tx-4fl-carbide-endmill-26x83-46861",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.066666666666667,
+                        "f_z": 0.05,
+                        "guid": "ec5273f7-ac2b-4006-b55f-cd8d4966408e",
+                        "n": 5000,
+                        "n_ramp": 5000,
+                        "name": "Default preset",
+                        "tool-coolant": "flood",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 188.4955592153876,
+                        "v_f": 1000,
+                        "v_f_leadIn": 1000,
+                        "v_f_leadOut": 1000,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "bull nose end mill",
+            "unit": "millimeters",
+            "vendor": "SGS/Kyocera"
         }
     ],
     "version": 1
