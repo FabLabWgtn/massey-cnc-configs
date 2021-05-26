@@ -1,0 +1,916 @@
+{
+    "data": [
+        {
+            "BMC": "carbide",
+            "description": "Ball Nose",
+            "geometry": {
+                "CSP": false,
+                "DC": 8,
+                "HAND": true,
+                "LB": 40,
+                "LCF": 20,
+                "NOF": 2,
+                "OAL": 63,
+                "SFDM": 8,
+                "shoulder-length": 40
+            },
+            "guid": "1173d82f-76e3-4b5e-9383-39bf3234c664",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 2,
+                "length-offset": 2,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 2,
+                "turret": 0
+            },
+            "product-id": "48746",
+            "product-link": "https://tradetools.co.nz/products/8mm-ser-3mb-2-flute-ti-namite-a-ball-nose-carbide-48746-20x63",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.15,
+                        "guid": "58f6335c-b784-4dde-9476-553818b135a3",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 4,
+                        "stepover": 0.8,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 301.59289474462014,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "d1758810-675c-4bf0-8416-d7e7c437191d",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 4,
+                        "stepover": 0.8,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 301.59289474462014,
+                        "v_f": 2400,
+                        "v_f_leadIn": 2400,
+                        "v_f_leadOut": 2400,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "ball end mill",
+            "unit": "millimeters",
+            "vendor": "SGS Tools"
+        },
+        {
+            "BMC": "hss",
+            "description": "Twist Drill",
+            "geometry": {
+                "CSP": false,
+                "DC": 9,
+                "HAND": true,
+                "LB": 95,
+                "LCF": 83,
+                "NOF": 2,
+                "OAL": 125,
+                "SFDM": 9,
+                "SIG": 118,
+                "shoulder-length": 95
+            },
+            "guid": "29970c41-8e80-42a2-be74-6edbce0a2fe1",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 3,
+                "length-offset": 3,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 3,
+                "turret": 0
+            },
+            "product-id": "",
+            "product-link": "",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.2,
+                        "guid": "e8fe25a8-69ed-45af-9470-883fa92da193",
+                        "n": 5000,
+                        "name": "Hardwood",
+                        "tool-coolant": "disabled",
+                        "v_c": 141.3716694115407,
+                        "v_f_plunge": 1000,
+                        "v_f_retract": 1000
+                    },
+                    {
+                        "f_n": 0.15,
+                        "guid": "56544354-b74d-4207-8dad-30325077bf51",
+                        "n": 5000,
+                        "name": "Cibatool",
+                        "tool-coolant": "disabled",
+                        "v_c": 141.3716694115407,
+                        "v_f_plunge": 750.0000000000001,
+                        "v_f_retract": 1000
+                    }
+                ]
+            },
+            "type": "drill",
+            "unit": "millimeters",
+            "vendor": "Frost"
+        },
+        {
+            "BMC": "hss",
+            "description": "Twist Drill",
+            "geometry": {
+                "CSP": false,
+                "DC": 6,
+                "HAND": true,
+                "LB": 60,
+                "LCF": 55,
+                "NOF": 2,
+                "OAL": 93,
+                "SFDM": 6,
+                "SIG": 118,
+                "shoulder-length": 60
+            },
+            "guid": "41abe6a9-b0b6-4afd-aac2-0c3f717d7d27",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 3,
+                "length-offset": 3,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 3,
+                "turret": 0
+            },
+            "product-id": "",
+            "product-link": "",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.2,
+                        "guid": "e8fe25a8-69ed-45af-9470-883fa92da193",
+                        "n": 5000,
+                        "name": "Hardwood",
+                        "tool-coolant": "disabled",
+                        "v_c": 94.2477796076938,
+                        "v_f_plunge": 1000,
+                        "v_f_retract": 1000
+                    },
+                    {
+                        "f_n": 0.15,
+                        "guid": "4a9f2722-ac32-41d8-9323-4c58ea08ced4",
+                        "n": 5000,
+                        "name": "Cibatool",
+                        "tool-coolant": "disabled",
+                        "v_c": 94.2477796076938,
+                        "v_f_plunge": 750.0000000000001,
+                        "v_f_retract": 1000
+                    }
+                ]
+            },
+            "type": "drill",
+            "unit": "millimeters",
+            "vendor": "Frost"
+        },
+        {
+            "BMC": "carbide",
+            "description": "Up Cut",
+            "geometry": {
+                "CSP": false,
+                "DC": 6,
+                "HAND": true,
+                "LB": 35,
+                "LCF": 25,
+                "NOF": 2,
+                "OAL": 63,
+                "SFDM": 6,
+                "shoulder-length": 35
+            },
+            "guid": "4c217075-6cc6-4c37-8850-373b199ee78b",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 1,
+                "length-offset": 1,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 1,
+                "turret": 0
+            },
+            "product-id": "90113",
+            "product-link": "https://tradetools.co.nz/products/6mm-up-cut-wood-router-ser-21m-25x63-6mm-shank-90113",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.15,
+                        "guid": "b007ca0b-1272-43bf-963c-91cd5b7f20a5",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 3,
+                        "stepover": 4,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 226.19467105846513,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "b25e8c35-c306-4911-b57a-67f3438ce33c",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 3,
+                        "stepover": 4,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 226.19467105846525,
+                        "v_f": 2400,
+                        "v_f_leadIn": 2400,
+                        "v_f_leadOut": 2400,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": "SGS Tools"
+        },
+        {
+            "BMC": "carbide",
+            "description": "Up Cut",
+            "geometry": {
+                "CSP": false,
+                "DC": 8,
+                "HAND": true,
+                "LB": 40,
+                "LCF": 25,
+                "NOF": 2,
+                "OAL": 63,
+                "SFDM": 8,
+                "shoulder-length": 40
+            },
+            "guid": "a80aba0d-ad73-444f-9609-3ba7c311c4a2",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 1,
+                "length-offset": 1,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 1,
+                "turret": 0
+            },
+            "product-id": "90121",
+            "product-link": "https://tradetools.co.nz/products/8mm-up-cut-wood-router-ser-21m-25x63-8mm-shank-90121",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.15,
+                        "guid": "b007ca0b-1272-43bf-963c-91cd5b7f20a5",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 4,
+                        "stepover": 4,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 301.59289474462014,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "0a01fc9e-aeda-433f-9c39-500cdbbcd5e6",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 4,
+                        "stepover": 4,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 301.59289474462014,
+                        "v_f": 2400,
+                        "v_f_leadIn": 2400,
+                        "v_f_leadOut": 2400,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": "SGS Tools"
+        },
+        {
+            "BMC": "carbide",
+            "description": "V Cut",
+            "geometry": {
+                "CSP": false,
+                "DC": 11,
+                "HAND": true,
+                "LB": 35,
+                "LCF": 11,
+                "NOF": 3,
+                "OAL": 57.2,
+                "SFDM": 6.350000000000001,
+                "TA": 30.00000000000001,
+                "shoulder-length": 30,
+                "tip-diameter": 0
+            },
+            "guid": "afa0fa25-1873-48c2-86f1-2f3ddac99d3a",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 4,
+                "length-offset": 4,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 4,
+                "turret": 0
+            },
+            "product-id": "858.001.11",
+            "product-link": "https://www.carbatec.co.nz/product/31314-cmt-laser-point-bit-60deg-for-lettering",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "afc18e3f-8232-41d1-955e-6d83bc0792fe",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "tool-coolant": "flood",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 414.6902302738528,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "49be1a50-9132-447f-9cf3-837d5a511f94",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "tool-coolant": "flood",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 414.6902302738528,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "chamfer mill",
+            "unit": "millimeters",
+            "vendor": "CMT"
+        },
+        {
+            "BMC": "carbide",
+            "description": "V Engraver",
+            "geometry": {
+                "CSP": false,
+                "DC": 6.350000000000001,
+                "HAND": true,
+                "LB": 29,
+                "LCF": 19.05,
+                "NOF": 2,
+                "OAL": 55,
+                "SFDM": 6.350000000000001,
+                "TA": 11,
+                "shoulder-length": 22,
+                "tip-diameter": 0
+            },
+            "guid": "a855d104-9550-45d7-ad5d-61982e7d8993",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 4,
+                "length-offset": 4,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 4,
+                "turret": 0
+            },
+            "product-id": "202031",
+            "product-link": "https://www.carbatec.co.nz/product/19704-arden-v-groove-and-engraving-bit-6-35-mm-cut-19-05-mm-cut-l",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.0154,
+                        "guid": "678f8158-8a43-4e83-988c-6485f9c30402",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 1,
+                        "tool-coolant": "flood",
+                        "use-stepdown": true,
+                        "use-stepover": false,
+                        "v_c": 239.38936020354228,
+                        "v_f": 369.6,
+                        "v_f_leadIn": 369.6,
+                        "v_f_leadOut": 369.6,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.01,
+                        "guid": "94e9afd0-654e-4125-8a2a-c294aa08b599",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 1,
+                        "tool-coolant": "flood",
+                        "use-stepdown": true,
+                        "use-stepover": false,
+                        "v_c": 239.38936020354228,
+                        "v_f": 240,
+                        "v_f_leadIn": 240,
+                        "v_f_leadOut": 240,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "chamfer mill",
+            "unit": "millimeters",
+            "vendor": "Arden"
+        },
+        {
+            "BMC": "carbide",
+            "description": "Up Cut",
+            "geometry": {
+                "CSP": false,
+                "DC": 3,
+                "HAND": true,
+                "LB": 30,
+                "LCF": 13,
+                "NOF": 2,
+                "OAL": 50,
+                "SFDM": 6,
+                "shoulder-length": 13
+            },
+            "guid": "107b95a9-8496-4cf7-9672-1befd86da2dd",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 1,
+                "length-offset": 1,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 1,
+                "turret": 0
+            },
+            "product-id": "90101",
+            "product-link": "https://tradetools.co.nz/products/3mm-up-cut-wood-router-ser-21m-13x50-6mm-shank-90102",
+            "shaft": {
+                "segments": [
+                    {
+                        "height": 7,
+                        "lower-diameter": 3,
+                        "upper-diameter": 6
+                    }
+                ],
+                "type": "shaft"
+            },
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.15,
+                        "guid": "eb42a3e9-e690-41fa-9d35-419250424d8d",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 2,
+                        "stepover": 2,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 113.09733552923257,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "f64ef1e1-0969-4f1d-bf0c-8058e4d44e3d",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 2,
+                        "stepover": 2,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 113.09733552923257,
+                        "v_f": 2400,
+                        "v_f_leadIn": 2400,
+                        "v_f_leadOut": 2400,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": "SGS"
+        },
+        {
+            "BMC": "hss",
+            "description": "Straight Flute Router",
+            "geometry": {
+                "CSP": false,
+                "DC": 20,
+                "HAND": true,
+                "LB": 25,
+                "LCF": 20,
+                "NOF": 2,
+                "OAL": 76.2,
+                "SFDM": 20,
+                "shoulder-length": 20
+            },
+            "guid": "d2624583-3705-441a-82c5-52c9bbeeed73",
+            "holder": {
+                "description": "",
+                "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+                "last_modified": 1621976336573,
+                "product-id": "",
+                "product-link": "",
+                "reference_guid": "<NEW TOOL GUID>",
+                "segments": [
+                    {
+                        "height": 21,
+                        "lower-diameter": 42,
+                        "upper-diameter": 42
+                    },
+                    {
+                        "height": 26,
+                        "lower-diameter": 32,
+                        "upper-diameter": 32
+                    },
+                    {
+                        "height": 10,
+                        "lower-diameter": 75,
+                        "upper-diameter": 75
+                    }
+                ],
+                "type": "holder",
+                "unit": "millimeters",
+                "vendor": ""
+            },
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 1,
+                "length-offset": 1,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 1,
+                "turret": 0
+            },
+            "product-id": "811.200.11",
+            "product-link": "https://www.carbatec.co.nz/product/29521-cmt-straight-bit-20-x-20mm",
+            "start-values": {
+                "presets": [
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.15,
+                        "guid": "8e7c35b3-5935-4075-9022-193ef01f5431",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Hardwood",
+                        "stepdown": 5,
+                        "stepover": 10,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 753.9822368615504,
+                        "v_f": 3599.9999999999995,
+                        "v_f_leadIn": 3599.9999999999995,
+                        "v_f_leadOut": 3599.9999999999995,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    },
+                    {
+                        "f_n": 0.027777777777778,
+                        "f_z": 0.1,
+                        "guid": "289bc1c9-f3a5-4319-abae-59068372cce6",
+                        "n": 12000,
+                        "n_ramp": 12000,
+                        "name": "Cibatool",
+                        "stepdown": 5,
+                        "stepover": 10,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": true,
+                        "use-stepover": true,
+                        "v_c": 753.9822368615504,
+                        "v_f": 2400,
+                        "v_f_leadIn": 2400,
+                        "v_f_leadOut": 2400,
+                        "v_f_plunge": 333.33333333333326,
+                        "v_f_ramp": 333.33333333333326
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": "CMT"
+        },
+        {
+            "description": "",
+            "guid": "3c8594a7-e4dc-41d9-8063-4e1155d2dbdb",
+            "last_modified": 1621976336573,
+            "product-id": "",
+            "product-link": "",
+            "reference_guid": "<NEW TOOL GUID>",
+            "segments": [
+                {
+                    "height": 21,
+                    "lower-diameter": 42,
+                    "upper-diameter": 42
+                },
+                {
+                    "height": 26,
+                    "lower-diameter": 32,
+                    "upper-diameter": 32
+                },
+                {
+                    "height": 10,
+                    "lower-diameter": 75,
+                    "upper-diameter": 75
+                }
+            ],
+            "type": "holder",
+            "unit": "millimeters",
+            "vendor": ""
+        }
+    ],
+    "version": 12
+}
