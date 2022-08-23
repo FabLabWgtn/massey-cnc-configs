@@ -218,7 +218,7 @@ function onOpen() {
   }
 
   if (true) { // note: setup your machine here
-    var aAxis = createAxis({coordinate:0, table:true, axis:[1, 0, 0], range:[-360, 360], preference:1});
+    var aAxis = createAxis({coordinate:0, table:true, axis:[-1, 0, 0], cyclic:true, preference:1});
     
     machineConfiguration = new MachineConfiguration(aAxis);
 
