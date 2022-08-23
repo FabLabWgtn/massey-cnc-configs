@@ -6,7 +6,7 @@
 
   $Revision: 43312 ba4b0f859980b2e4bae4e50e286d8dfd55247a50 $
   $Date: 2021-06-10 16:01:18 $
-  
+
   FORKID {AB42541D-1A07-46fe-AAA5-423A383AA31C}
 */
 
@@ -214,18 +214,16 @@ function writeComment(text) {
 
 function onOpen() {
   if (getProperty("useRadius")) {
-    maximumCircularSweep = toRad(90); // avoid potential center calculation errors for CNC
+    maximumCircularSweep = toRad(360); // avoid potential center calculation errors for CNC
   }
-
   if (true) { // note: setup your machine here
-    var aAxis = createAxis({coordinate:0, table:true, axis:[1, 0, 0], range:[-360, 360], preference:1});
-    
+    var aAxis = createAxis({coordinate:0, table:true, axis:[-1, 0, 0], cyclic:true, preference:1});
+
     machineConfiguration = new MachineConfiguration(aAxis);
 
     setMachineConfiguration(machineConfiguration);
-    optimizeMachineAngles2(1); // map tip mode
+    optimizeMachineAngles2(0); // map tip mode
   }
-
   if (!machineConfiguration.isMachineCoordinate(0)) {
     aOutput.disable();
   }
@@ -239,7 +237,6 @@ function onOpen() {
   if (!getProperty("separateWordsWithSpace")) {
     setWordSeparator("");
   }
-
   sequenceNumber = getProperty("sequenceNumberStart");
   writeln("%");
 
@@ -277,7 +274,6 @@ function onOpen() {
       writeComment("  " + localize("description") + ": "  + description);
     }
   }
-
   // dump tool information
   if (getProperty("writeTools")) {
     var zRanges = {};
@@ -395,7 +391,7 @@ function setWorkPlane(abc) {
     conditional(machineConfiguration.isMachineCoordinate(1), "B" + abcFormat.format(abc.y)),
     conditional(machineConfiguration.isMachineCoordinate(2), "C" + abcFormat.format(abc.z))
   );
-  
+
   onCommand(COMMAND_LOCK_MULTI_AXIS);
 
   currentWorkPlaneABC = abc;
@@ -417,7 +413,7 @@ function getWorkPlaneMachineABC(workPlane) {
   } else {
     abc = machineConfiguration.getPreferredABC(abc);
   }
-  
+
   try {
     abc = machineConfiguration.remapABC(abc);
     currentMachineABC = abc;
@@ -429,12 +425,12 @@ function getWorkPlaneMachineABC(workPlane) {
       + conditional(machineConfiguration.isMachineCoordinate(2), " C" + abcFormat.format(abc.z))
     );
   }
-  
+
   var direction = machineConfiguration.getDirection(abc);
   if (!isSameDirection(direction, W.forward)) {
     error(localize("Orientation not supported."));
   }
-  
+
   if (!machineConfiguration.isABCSupported(abc)) {
     error(
       localize("Work plane is not supported") + ":"
@@ -452,7 +448,7 @@ function getWorkPlaneMachineABC(workPlane) {
     var R = machineConfiguration.getRemainingOrientation(abc, W);
     setRotation(R);
   }
-  
+
   return abc;
 }
 
@@ -465,7 +461,7 @@ function onSection() {
   var insertToolCall = isFirstSection() ||
     currentSection.getForceToolChange && currentSection.getForceToolChange() ||
     (tool.number != getPreviousSection().getTool().number);
-  
+
   retracted = false; // specifies that the tool has been retracted to the safe plane
   var newWorkOffset = isFirstSection() ||
     (getPreviousSection().workOffset != currentSection.workOffset); // work offset changes
@@ -477,7 +473,7 @@ function onSection() {
     (!getPreviousSection().isMultiAxis() && currentSection.isMultiAxis() ||
       getPreviousSection().isMultiAxis() && !currentSection.isMultiAxis()); // force newWorkPlane between indexing and simultaneous operations
   if (insertToolCall || newWorkOffset || newWorkPlane) {
-    
+
     // retract to safe plane
     writeRetract(Z);
     zOutput.reset();
@@ -489,7 +485,7 @@ function onSection() {
       writeComment(comment);
     }
   }
-  
+
   if (getProperty("showNotes") && hasParameter("notes")) {
     var notes = getParameter("notes");
     if (notes) {
@@ -504,22 +500,22 @@ function onSection() {
       }
     }
   }
-  
+
   if (insertToolCall) {
     forceWorkPlane();
-    
+
     onCommand(COMMAND_COOLANT_OFF);
-  
+
     if (getProperty("useToolChanger")) {
       if (!isFirstSection() && getProperty("optionalStop")) {
         onCommand(COMMAND_OPTIONAL_STOP);
       }
     }
-  
+
     if (tool.number > 99) {
       warning(localize("Tool number exceeds maximum value."));
     }
-    
+
     if (getProperty("useToolChanger")) {
       writeBlock("T" + toolFormat.format(tool.number), mFormat.format(6));
     } else {
@@ -556,7 +552,7 @@ function onSection() {
       onCommand(COMMAND_STOP);
     }
   }
-  
+
   if (insertToolCall ||
       isFirstSection() ||
       (rpmFormat.areDifferent(spindleSpeed, sOutput.getCurrent())) ||
@@ -636,7 +632,7 @@ function onSection() {
 
     gMotionModal.reset();
     writeBlock(gPlaneModal.format(17));
-    
+
     if (!machineConfiguration.isHeadConfiguration()) {
       writeBlock(
         gAbsIncModal.format(90),
@@ -694,7 +690,7 @@ function onCyclePoint(x, y, z) {
   }
   if (isFirstCyclePoint()) {
     repositionToCycleClearance(cycle, x, y, z);
-    
+
     // return to initial Z which is clearance plane and set absolute mode
 
     var F = cycle.feedrate;
@@ -868,8 +864,8 @@ function onLinear(_x, _y, _z, feed) {
 
 function onRapid5D(_x, _y, _z, _a, _b, _c) {
   if (!currentSection.isOptimizedForMachine()) {
-    error(localize("This post configuration has not been customized for 5-axis simultaneous toolpath."));
-    return;
+    warningOnce(localize("This post configuration has not been customized for 5-axis simultaneous toolpath."),98);
+//    return;
   }
   if (pendingRadiusCompensation >= 0) {
     error(localize("Radius compensation mode cannot be changed at rapid traversal."));
@@ -887,8 +883,8 @@ function onRapid5D(_x, _y, _z, _a, _b, _c) {
 
 function onLinear5D(_x, _y, _z, _a, _b, _c, feed) {
   if (!currentSection.isOptimizedForMachine()) {
-    error(localize("This post configuration has not been customized for 5-axis simultaneous toolpath."));
-    return;
+    warningOnce(localize("This post configuration has not been customized for 5-axis simultaneous toolpath."),99);
+//    return;
   }
   if (pendingRadiusCompensation >= 0) {
     error(localize("Radius compensation cannot be activated/deactivated for 5-axis move."));
